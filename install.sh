@@ -3,7 +3,7 @@
 # install font config
 [[ -d ~/.config ]] || mkdir -p ~/.config
 [[ -d ~/.config/fontconfig ]] || mkdir -p ~/.config/fontconfig
-ln -sf "$(pwd)/fonts.conf" ~/.config/fontconfig/fonts.conf
+cp -f "$(pwd)/fonts.conf" ~/.config/fontconfig/fonts.conf
 
 # install maple mono
 target="https://github.com/subframe7536/maple-font/releases/latest/download/MapleMono-NF-CN.zip"

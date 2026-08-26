@@ -3,7 +3,7 @@
 # install font config
 [[ -d ~/.config ]] || mkdir -p ~/.config
 [[ -d ~/.config/fontconfig ]] || mkdir -p ~/.config/fontconfig
-ln -sf "$(pwd)/fonts.conf" ~/.config/fontconfig/fonts.conf
+cp -f "$(pwd)/fonts.conf" ~/.config/fontconfig/fonts.conf
 
 # install maple mono if necessary
 if ! fc-list : family | grep -i "Maple Mono NF CN" >/dev/null; then
