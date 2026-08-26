@@ -15,3 +15,7 @@ target="https://github.com/subframe7536/maple-font/releases/latest/download/Mapl
     echo '[INFO] Deflating MapleMono-NF-CN.zip...'
     unzip -oqq MapleMono-NF-CN.zip
 )
+
+# rebuild fc-cache
+echo '[INFO] Rebuilding fc cache...'
+fc-cache -f

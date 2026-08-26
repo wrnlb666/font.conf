@@ -17,3 +17,7 @@ if ! fc-list : family | grep -i "Maple Mono NF CN" >/dev/null; then
         unzip -oqq MapleMono-NF-CN.zip
     )
 fi
+
+# rebuild fc-cache
+echo '[INFO] Rebuilding fc cache...'
+fc-cache -f
